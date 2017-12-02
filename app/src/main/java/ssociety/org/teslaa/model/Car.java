@@ -1,5 +1,8 @@
 package ssociety.org.teslaa.model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.NotNull;
@@ -11,19 +14,32 @@ import org.greenrobot.greendao.annotation.Generated;
 
 @Entity
 public class Car {
+    @SerializedName("id")
+    @Expose
     @Id
     private Long id;
-
+    @SerializedName("category")
+    @Expose
     @NotNull
     private String category;
+    @SerializedName("model")
+    @Expose
     @NotNull
     private String model;
+    @SerializedName("battery_capacity")
+    @Expose
     @NotNull
     private int battery_capacity;
+    @SerializedName("maximal_speed")
+    @Expose
     @NotNull
     private int maximal_speed;
+    @SerializedName("0_to_100_time")
+    @Expose
     @NotNull
     private double time;
+    @SerializedName("price")
+    @Expose
     @NotNull
     private int price;
     @Generated(hash = 1024076723)
