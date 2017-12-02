@@ -22,14 +22,12 @@ import ssociety.org.teslaa.model.DaoSession;
  */
 
 
-
 @RunWith(RobolectricTestRunner.class)
 public class CarTest {
-    private Context context;
     private DaoSession daoSession;
+
     @Before
     public void setUp() throws Exception {
-        context = RuntimeEnvironment.application;
         DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(RuntimeEnvironment.application, "test-db");
         Database db = helper.getWritableDb();
         daoSession = new DaoMaster(db).newSession();
@@ -39,14 +37,14 @@ public class CarTest {
     @Test
     public void firstInsertionTest() throws Exception {
 
-            CarDao carDao = daoSession.getCarDao();
-            List<Car> cars = carDao.loadAll();
-            Assert.assertEquals(cars.size(), 0);
-            Car car_1 = new Car(null, "category","model", 100, 200, 1.0, 1000);
-            carDao.insert(car_1);
-            cars = carDao.loadAll();
-            Assert.assertEquals(cars.size(), 1);
-            Assert.assertEquals(carDao.loadAll().get(0).getCategory(),"category");
+        CarDao carDao = daoSession.getCarDao();
+        List<Car> cars = carDao.loadAll();
+        Assert.assertEquals(cars.size(), 0);
+        Car car_1 = new Car(null, "category", "model", 100, 200, 1.0, 1000);
+        carDao.insert(car_1);
+        cars = carDao.loadAll();
+        Assert.assertEquals(cars.size(), 1);
+        Assert.assertEquals(carDao.loadAll().get(0).getCategory(), "category");
     }
 
 
