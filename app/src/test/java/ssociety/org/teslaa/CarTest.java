@@ -32,6 +32,7 @@ public class CarTest {
         Database db = helper.getWritableDb();
         daoSession = new DaoMaster(db).newSession();
 
+
     }
 
     @Test

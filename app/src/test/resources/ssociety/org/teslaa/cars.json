@@ -1,0 +1,58 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "category": "Model S",
+      "model": "75D",
+      "battery_capacity": 75,
+      "maximal_speed": 225,
+      "0_to_100_time": 4.4,
+      "price": 86100
+    },
+    {
+      "id": 2,
+      "category": "Model S",
+      "model": "100D",
+      "battery_capacity": 100,
+      "maximal_speed": 250,
+      "0_to_100_time": 4.3,
+      "price": 109150
+    },
+    {
+      "id": 3,
+      "category": "Model S",
+      "model": "P100D",
+      "battery_capacity": 100,
+      "maximal_speed": 250,
+      "0_to_100_time": 2.7,
+      "price": 149200
+    },
+    {
+      "id": 4,
+      "category": "Model X",
+      "model": "75D",
+      "battery_capacity": 75,
+      "maximal_speed": 210,
+      "0_to_100_time": 5.2,
+      "price": 92850
+    },
+    {
+      "id": 5,
+      "category": "Model X",
+      "model": "100D",
+      "battery_capacity": 100,
+      "maximal_speed": 250,
+      "0_to_100_time": 4.9,
+      "price": 112500
+    },
+    {
+      "id": 6,
+      "category": "Model X",
+      "model": "P100D",
+      "battery_capacity": 100,
+      "maximal_speed": 250,
+      "0_to_100_time": 3.1,
+      "price": 158450
+    }
+  ]
+}
